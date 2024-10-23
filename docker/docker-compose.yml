@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+
+  ner:
+    image: socialanalytics-sensors-ner:1.0.0
+    container_name: socialanalytics-sensors-ner
+    build: .
+    restart: always
+    ports:
+      - 7003:9000
+    volumes:
+      - ../server_ner:/usr/local/lib/python3.8/site-packages/server_ner
+      - ../docker/startup:/app/docker/startup
+      - ../_tmp/logs:/app/_tmp/logs
+    environment:
+      - "API_KEY=254d4a6b00b78b94f846b85528298d43"
+      - "LOGS_FOLDER=/app/_tmp/logs"
+      - "SERVER_WORKERS=2"
+      - "SERVER_THREADS=2"
+      - "EMAIL_ACCOUNT=admin@example.com"
+    entrypoint: ["/app/docker/startup/entrypoint.sh"]

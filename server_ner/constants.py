@@ -1,0 +1,16 @@
+LANGUAGE_ES = 'es'
+LANGUAGE_EN = 'en'
+
+
+SPACY_MODEL_ES_LARGE = 'es_core_news_lg'
+SPACY_MODEL_EN_LARGE = 'en_core_web_lg'
+
+SPACY_NEL_PIPE_OPENTAPIOCA = 'opentapioca'
+
+DOCUMENT_KEYS_ID = 'id'
+DOCUMENT_KEYS_TEXT = 'text'
+DOCUMENT_KEYS_LANG = 'lang'
+
+
+QUERY_KEYS_DOCUMENTS = 'documents'
+QUERY_KEYS_PRETTY = 'pretty'
