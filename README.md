@@ -1,5 +1,5 @@
 # Servicio de Detección de Entidades
-El repositorio implementa un servicio para la detección de entidades utilizando [spaCy](https://spacy.io)
+El repositorio implementa un servicio para la detección de entidades utilizando [spaCy](https://spacy.io).
 
 ## Instrucciones para el despliegue
 
